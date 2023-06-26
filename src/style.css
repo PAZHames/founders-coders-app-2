@@ -1,0 +1,195 @@
+:root {
+    /* colors */
+    --primary-color: #CB9A87;
+    --secondary-color: white;
+    --highlight-color:  #FF5000;
+    --alert-color: #005CBB ;
+
+    /* fonts */
+    --heading-font: 'Familjen Grotesk', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+
+    /* other */
+    --default-transition: 250ms all ease-in-out;
+
+  }
+
+/* Utilities */
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.body-font {
+    font-family: var(--body-font);
+}
+
+.light-section {
+    background-color: white;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    font-family: var(--body-font);
+}
+
+.dark-section {
+    color: var(--secondary-color);
+}
+
+.section-content {
+    padding: 40px;
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .paragraph {
+    line-height: 1.5;
+    font-family: var(--body-font);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+/* Built-in elements */
+
+
+body {
+    background-color: var(--primary-color);
+    
+}
+h1,h2 {
+    padding-right: 80px;
+   
+}
+h1 {
+    font-size: 72px;
+    color: var(--secondary-color);
+    padding-top: 120px;
+    margin-bottom: 30px;
+}
+h2 {
+    color: var(--secondary-color);
+    font-weight: normal;
+    margin-top: 0px;
+    opacity: 0.8;
+}
+
+h3 {
+    color: var(--highlight-color);
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    padding: 60px;
+}
+
+/* Classes */
+
+    /* page sections */
+
+.container {
+    top: 20px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    position: sticky;
+}
+.hero {
+    font-family: var(--heading-font);
+    height: 90vh;
+}
+
+.twitter-section {
+    background-color: white;
+    color: var(--alert-col);
+}
+
+    /* other */
+
+.contact-icon {
+    color: var(--secondary-color);
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-icon:hover {
+    color: var(--highlight-color);
+    transition: var(--default-transition);
+}
+
+.contact-link {
+    text-decoration: none;
+}
+.main-image-col {
+    background-image: url(src/images/psychadelic-background.jpg);
+    background-size: cover;
+}
+.main-image {
+    border-radius: 5px;
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;  
+    margin-top: 70px;  
+    box-shadow: 2px 2px 10px, -60px -40px 1px var(--highlight-color), 60px 40px 1px #ffff;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding-left: 0;
+    color: var(--secondary-color);
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.menu-list-item {
+    line-height: 1.5;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.menu-list-item:hover {
+    color: var(--highlight-color);
+    transition: var(--default-transition);
+}
+
+.site-video {
+    justify-content: center;
+}
+
+.project-heading {
+    color: var(--highlight-color);
+    font-size: 36px;
+    text-align: center;
+}
+
+
+
+.twitter-header {
+font-size: 36px;
+}
+
+.twitter-timeline {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+}
+
+
