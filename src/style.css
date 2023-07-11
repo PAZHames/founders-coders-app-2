@@ -51,7 +51,7 @@
   }
 
   .paragraph {
-    line-height: 1.5;
+    line-height: 2;
     font-family: var(--body-font);
     padding-left: 40px;
     padding-right: 40px;
@@ -60,6 +60,16 @@
   .link {
     text-decoration: none;
     color: inherit;
+  }
+
+  .inline-link {
+    color: inherit;
+  }
+
+  .inline-link:hover {
+    color: var(--highlight-color);
+    font-weight: bold;
+    transition: var(--default-transition);
   }
 
  
@@ -73,14 +83,10 @@ body {
     background-color: var(--primary-color);
     
 }
-h1,h2 {
-    padding-right: 80px;
-   
-}
+
 h1 {
     font-size: 72px;
     color: var(--secondary-color);
-    
     margin-bottom: 30px;
 }
 h2 {
@@ -107,6 +113,10 @@ ul, li {
 
     /* page sections */
 
+.index-headings {
+    padding-right: 80px;   
+}
+
 .container {
     top: 20px;
 }
@@ -130,6 +140,10 @@ ul, li {
 
 .about-h1 {
     text-align: center;
+}
+
+.top-para {
+    padding: 30px;
 }
 
 .twitter-section {
@@ -173,7 +187,7 @@ ul, li {
 
   .dark-button:after, .dark-button:before {
     content: "";
-    color: var(--highlight-color);
+    color: var(--secondary-color);
     background-color: var(--highlight-color);
     display: block;
     position: absolute;
