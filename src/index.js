@@ -2,7 +2,14 @@
 
 window.onscroll = function() {
     stickToTop()
+    rotateIconOnScroll()
 };
+
+// window.addEventListener("scroll", function() {
+//     rotateIconOnScroll();
+// })
+
+
 
 // variables
 
@@ -18,6 +25,19 @@ function stickToTop() {
     }
     else {
         navbar.classList.remove("sticky")
+    }
+}
+
+function rotateIconOnScroll() {
+    var icon = document.getElementById("sun-icon");
+    var threshold = 200;
+    var rotationSpeed = 5;
+
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition>=threshold) {
+        var rotation = scrollPosition/rotationSpeed;
+        icon.style.transform = "rotate(" + rotation + "deg)";
     }
 }
 

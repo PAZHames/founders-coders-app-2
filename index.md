@@ -20,6 +20,7 @@ Sub-sections
     - finish dan website to show?
     - finish react project - put javascript and react versions next door to each other
     - use languages/skills shown in each 
+- move about me section to separate page 
 
 
 Requirements
