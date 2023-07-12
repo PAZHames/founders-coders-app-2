@@ -29,8 +29,23 @@
     padding: 10px;
 }
 
+.flex {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    max-width: 100%;
+}
+
 .body-font {
     font-family: var(--body-font);
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
 }
 
 .light-section {
@@ -45,7 +60,6 @@
 }
 
 .sticky {
-    position: fixed;
     top: 0;
     width: 100%;
   }
@@ -164,8 +178,6 @@ ul, li {
 /* buttons */
 
 
-
-
   .button {
     position: relative;
     padding: 1em 1.5em;
@@ -180,15 +192,14 @@ ul, li {
   }
 
   .dark-button {
-    color: var(--highlight-color);
+    color: var(--secondary-color);
     font-weight: bold;
    
   }
 
   .dark-button:after, .dark-button:before {
     content: "";
-    color: var(--secondary-color);
-    background-color: var(--highlight-color);
+    background-color: var(--secondary-color);
     display: block;
     position: absolute;
     top: 100%;
@@ -208,6 +219,17 @@ ul, li {
     .dark-button:hover:after {
       transform: scale(1);
     }
+
+
+/* My Projects */
+
+.tools-header {
+    margin-bottom: 0;
+}
+
+  .tool-logo {
+    max-width: 80%;
+  }
 
     /* other */
 
@@ -268,12 +290,14 @@ ul, li {
 }
 
 .project-heading {
-    color: var(--highlight-color);
+    color: var(--secondary-color);
     font-size: 36px;
     text-align: center;
 }
 
-
+.project-section {
+    padding-top: 75px;
+}
 
 .twitter-header {
 font-size: 36px;
@@ -291,5 +315,8 @@ font-size: 36px;
 /* IDs */
 
 #sun-icon {
-    max-width: 10%;
+    /* max-width: 20%; */
+    align-self: flex-end;
+    width: 30%;
+    margin-top: -100px;
 }
