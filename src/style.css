@@ -85,7 +85,6 @@
     font-weight: bold;
     transition: var(--default-transition);
   }
-
  
 /* Built-in elements */
 
@@ -162,17 +161,24 @@ ul, li {
 
 .twitter-section {
     background-color: white;
-    color: var(--alert-col);
-}
+    /* border: 1px solid var(--highlight-color); */
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    align-self: center;
+    }
 
-.parallax {
-   
-    /* parallax-scroll */
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    .twitter-timeline {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
 
 
 /* buttons */
@@ -220,10 +226,17 @@ ul, li {
       transform: scale(1);
     }
 
+    .collapsible {
+        width: 100%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
 
 /* My Projects */
 
-.tools-header {
+.small-header {
     margin-bottom: 0;
 }
 
@@ -282,6 +295,11 @@ ul, li {
     justify-content: center;
 }
 
+.challenges {
+    display: none;
+    overflow: hidden;
+}
+
 .about-image {
     display: block;
     margin: 0 auto;
@@ -300,17 +318,21 @@ ul, li {
 }
 
 .twitter-header {
-font-size: 36px;
+font-size: 32px;
+padding-top: 60px;
 }
 
 .twitter-timeline {
     display: block;
     margin: 0 auto;
-    width: 60%;
-    /* padding-top: 20px; */
+    width: 80%;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
+.footer-section {
+    padding: 40px;
+}
 
 /* IDs */
 

@@ -5,6 +5,7 @@ window.onscroll = function() {
     rotateIconOnScroll()
 };
 
+
 // window.addEventListener("scroll", function() {
 //     rotateIconOnScroll();
 // })
@@ -19,6 +20,8 @@ var sticky = navbar.offsetTop;
 
 //functions
 
+// navbar function 
+
 function stickToTop() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
@@ -28,10 +31,11 @@ function stickToTop() {
     }
 }
 
+//sun rotate function 
 function rotateIconOnScroll() {
     var icon = document.getElementById("sun-icon");
-    var threshold = 200;
-    var rotationSpeed = 5;
+    var threshold = 10;
+    var rotationSpeed = 3;
 
     var scrollPosition = window.scrollY;
 
@@ -39,5 +43,27 @@ function rotateIconOnScroll() {
         var rotation = scrollPosition/rotationSpeed;
         icon.style.transform = "rotate(" + rotation + "deg)";
     }
+}
+
+// collapsible
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+
+    // to hide collapsible content on loading
+var collapsibleContent = coll[i].nextElementSibling;
+collapsibleContent.style.display = "none";
+//  to expand/collapse
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var collapsibleContent = this.nextElementSibling;
+    if (collapsibleContent.style.display === "flex") {
+        collapsibleContent.style.display = "none";
+    } else {
+        collapsibleContent.style.display = "flex";
+    }
+  });
 }
 
