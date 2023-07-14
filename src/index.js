@@ -59,10 +59,10 @@ collapsibleContent.style.display = "none";
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var collapsibleContent = this.nextElementSibling;
-    if (collapsibleContent.style.display === "flex") {
+    if (collapsibleContent.style.display === "block") {
         collapsibleContent.style.display = "none";
     } else {
-        collapsibleContent.style.display = "flex";
+        collapsibleContent.style.display = "block";
     }
   });
 }
