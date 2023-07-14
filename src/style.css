@@ -85,6 +85,14 @@
     font-weight: bold;
     transition: var(--default-transition);
   }
+
+  .small-version {
+    display: none;
+  }
+
+  .small-version.button {
+    display: none;
+  }
  
 /* Built-in elements */
 
@@ -151,9 +159,6 @@ ul, li {
     padding-top: 120px;
 }
 
-.about-h1 {
-    text-align: center;
-}
 
 .top-para {
     padding: 30px;
@@ -341,4 +346,107 @@ padding-top: 60px;
     align-self: flex-end;
     width: 30%;
     margin-top: -100px;
+}
+
+@media (max-width:800px) {
+
+ /* Utilities */
+    .small-version {
+        display: block;
+    }
+    .small-version.button {
+        display: block;
+    }
+    .large-version {
+        display: none;
+    }
+    .sub-h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .paragraph {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .button {
+        font-size: 12px;
+    }
+    .contact-icon {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+/* index */
+    .index-headings {
+        padding: 10px;
+    }
+
+    .index-h1 {
+        text-align: center;
+        font-size: 48px;
+        margin-bottom: 0;
+        padding-top: 30px;
+    }
+
+    .small-main-image {
+        margin-top: 90px;
+        max-width: 40%;
+    }
+
+    .large-main-image {
+        display: none;
+    }
+    h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .twitter-section {
+        display: none;
+    }
+
+    .menu-list {
+        margin-top: 0;
+        padding-left: 20px;
+    }
+
+    .menu-list-item {
+        font-size: 16px;
+    }
+
+    #sun-icon {
+        margin-top: -120px;
+    }
+
+    .footer-section {
+        padding: 20px;
+        font-size: 10px;
+    }
+
+/* about + why */
+
+
+/* projects */
+.site-video {
+    padding: 0;
+}
+
+.project-section {
+    padding-top: 20px;
+}
+
+.project-heading {
+    font-size: 20px;
+    margin: 0;
+}
+
+.small-header {
+    margin-top: 0;
+}
+
+.larger-video {
+    margin: 10px;
+}
 }
