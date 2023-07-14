@@ -294,6 +294,15 @@ h3 {
     width: 60%;
     height: 100%;
   }
+
+  .card-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;   
+    object-fit: cover;
+}
  
 /* My Projects */
 
@@ -361,12 +370,7 @@ h3 {
     overflow: hidden;
 }
 
-.about-image {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-    border-radius: 10px;
-}
+
 
 .project-heading {
     color: var(--secondary-color);
