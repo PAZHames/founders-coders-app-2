@@ -1,6 +1,6 @@
 # Founders and Coders Application Site
 
-# Initial build and Index
+# Initial Build and Index
 
 I initially built this as a single page site, navigable from the links at the top. But the site felt too busy and overwhelming, so I split it down into multiple pages. I initially put the sun in the middle of the page, straddling two sections, but decided it looked too much like a loading wheel so offset it. It makes me smile. 
 
