@@ -316,8 +316,11 @@ h3 {
 }
 
   .tool-logo {
-    max-width: 80%;
+    max-width: 60px;
   }
+
+  .tool-container {
+justify-content: space-between;  }
 
   .collapsibleContent.flex-row {
     display: flex;
