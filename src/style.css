@@ -243,6 +243,10 @@ h3 {
         cursor: pointer;
       }
 
+    .site-button {
+        margin-top: 20px;
+    }
+
 /* cards */
 
 .card-container {
@@ -313,6 +317,12 @@ h3 {
 
   .tool-logo {
     max-width: 80%;
+  }
+
+  .collapsibleContent.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
     /* other */
