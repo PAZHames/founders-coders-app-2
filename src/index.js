@@ -52,18 +52,25 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
 
-    // to hide collapsible content on loading
 var collapsibleContent = coll[i].nextElementSibling;
 collapsibleContent.style.display = "none";
-//  to expand/collapse
-  coll[i].addEventListener("click", function() {
+
+// expand/collapse
+coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var collapsibleContent = this.nextElementSibling;
-    if (collapsibleContent.style.display === "block") {
-        collapsibleContent.style.display = "none";
+    if (this.classList.contains("flex")) {
+        if (collapsibleContent.style.display === "flex") {
+            collapsibleContent.style.display = "none";
+        } else {
+            collapsibleContent.style.display = "flex";
+        }
     } else {
-        collapsibleContent.style.display = "block";
+        if (collapsibleContent.style.display === "block") {
+            collapsibleContent.style.display = "none";
+        } else {
+            collapsibleContent.style.display = "block";
+        }
     }
-  });
+});
 }
-
