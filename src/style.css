@@ -477,7 +477,8 @@ padding: 0px 60px;
         padding-top: 30px;
     }
 
-    .small-main-image {
+    .small-version.small-main-image {
+        display: block;
         margin-top: 90px;
         max-width: 40%;
     }
@@ -514,6 +515,13 @@ padding: 0px 60px;
 
 /* about + why */
 
+.card-header {
+    font-size: 48px;
+}
+
+.card-para {
+    font-size: 14px;
+}
 
 /* projects */
 .site-video {
