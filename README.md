@@ -27,4 +27,6 @@ I used small-version as a utility class to put display: none on those elements w
     display: flex;
     align-items: center;
     justify-content: center;    
-And that fixed the problem. 
+And that fixed the problem.
+
+- A last-minute challenge. I used collapsible content for two different segments on each project on the My Projects page. One needed to be block, one flex. After accessing the console, I realised the CSS override was coming from the JavaScript, which was controlling the collapse by making the content display block when it was visible. I attempted to solve this by adding in an if statement of  if (this.classList.contains("flex")), but this didn't have the desired effect. As such, I removed the collapsible class from the flex element, meaning although the Tools are always on display, the page as a whole looks a lot neater for them being in a row rather than one long column.
